@@ -14,6 +14,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -37,5 +39,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://fathomless-depths-10083.herokuapp.com/"
+  "proxy": "https://fathomless-depths-10083.herokuapp.com/",
+  "homepage": "https://jamato25.github.io/halo-interview"
 }
