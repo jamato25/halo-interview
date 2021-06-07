@@ -1,4 +1,7 @@
-Halo Interview
+#Halo Interview
+
+Deployed to this URL: https://jamato25.github.io/halo-interview/
+
 
 # Getting Started with Create React App
 
