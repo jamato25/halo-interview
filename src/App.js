@@ -13,7 +13,7 @@ function App() {
   //Fetch initial data from database for the app to load.
   useEffect( () => {
     async function fetchData(){
-        await axios.get('/todos')
+        await axios.get("https://fathomless-depths-10083.herokuapp.com/todos")
         .then(response => {
           setTodos(response.data)
         })

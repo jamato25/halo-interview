@@ -14,7 +14,7 @@ const EditTodo = ({todo, setEditToggle, editTodo}) =>  {
   const onSubmit = async (e) =>{
     e.preventDefault()
     editTodo(e.target.id, text)
-    await axios.put(`/todos/${e.target.id}`, {...todo, content: text})
+    await axios.put(`https://fathomless-depths-10083.herokuapp.com/todos/${e.target.id}`, {...todo, content: text})
     .catch(e => {
         console.log(e);
         setText(text)

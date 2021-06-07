@@ -10,7 +10,7 @@ const Footer = ({itemCount, clearCompleted, todos, anyCompleted, changeFilter, f
     clearCompleted()
     for(let todo of updatedTodos){
       if(todo.isDone){
-        await axios.delete(`/todos/${todo.id}`)
+        await axios.delete(`https://fathomless-depths-10083.herokuapp.com/todos/${todo.id}`)
         .catch(e => {
             console.log(e);
         });

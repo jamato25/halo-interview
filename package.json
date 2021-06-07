@@ -39,6 +39,9 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://fathomless-depths-10083.herokuapp.com/",
-  "homepage": "https://jamato25.github.io/halo-interview"
+  "homepage": "https://jamato25.github.io/halo-interview",
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
 }

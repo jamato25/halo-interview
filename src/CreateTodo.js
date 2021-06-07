@@ -13,7 +13,7 @@ const CreateTodo = ({addTodo}) => {
 
   const onSubmit = async (e) =>{
     e.preventDefault()
-    await axios.post('/todos', {content: text, isDone: false})
+    await axios.post('https://fathomless-depths-10083.herokuapp.com/todos', {content: text, isDone: false})
     .then(response => {
         addTodo(response.data)
         setText("")

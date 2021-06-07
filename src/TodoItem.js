@@ -9,7 +9,7 @@ const TodoItem = ({todo, handleToggle, handleDelete, editTodo}) =>{
   //Updates database with checked complete items
   const onClickComplete = async (e) => {
     handleToggle(e.target.id)
-    await axios.put(`/todos/${todo.id}`, {...todo, isDone: !todo.isDone})
+    await axios.put(`https://fathomless-depths-10083.herokuapp.com/todos/${todo.id}`, {...todo, isDone: !todo.isDone})
     .catch(e => {
         console.log(e);
     });
@@ -18,7 +18,7 @@ const TodoItem = ({todo, handleToggle, handleDelete, editTodo}) =>{
   //Updates database with deleted items
   const onClickDelete = async (e) => {
     handleDelete(e.target.id)
-    await axios.delete(`/todos/${todo.id}`)
+    await axios.delete(`https://fathomless-depths-10083.herokuapp.com/todos/${todo.id}`)
     .catch(e => {
         console.log(e);
     });
